@@ -1,0 +1,37 @@
+# Left Sidebar
+# # Account switcher 
+x.com##[data-testid="SideNav_AccountSwitcher_Button"]
+# # "Verified Orgs"
+x.com##[aria-label="Verified Orgs"]
+# # Grok
+x.com##[aria-label="Grok"]
+# # Jobs
+x.com##[data-testid="jobs-tab-item"]
+
+# Right Sidebar
+x.com##[aria-label="Who to follow"]:upward(4)
+x.com##[aria-label="Timeline: Trending now"]:upward(4)
+
+# Grok
+# # Grok in the sidebar and toolbar 
+x.com##[data-testid="GrokDrawer"]
+# # I FORGOT
+x.com##[aria-label="Grok actions"]:upward(1)
+# # Grok button in the Post writer 
+x.com##[aria-label="Enhance your post with Grok"]:upward(1)
+# # Profile summary on someones page 
+x.com##[aria-label="Profile Summary"]
+# # Profile summary when hovering over someone's profile picture 
+x.com##button:has(div > span > span:contains("Profile Summary")):upward(1) 
+
+# Engagements
+# # View count on tweets in timeline (can still be viewed by going onto the tweet's page)
+x.com##[href*="/analytics"][aria-label*=". View post analytics"]:upward(1)
+
+# Premium
+# # Premium in the sidebar 
+x.com##[aria-label="Premium"]
+x.com##[data-testid="premium-hub-tab"]
+# # Premium advertisement in the top bar on mobile
+x.com##a[href="/i/premium_sign_up"]:has(div > span > span:contains('Premium'))
+
